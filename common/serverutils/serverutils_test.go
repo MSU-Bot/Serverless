@@ -8,7 +8,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/MSU-Bot/msubot-serverless/common/testutils"
+	"github.com/MSU-Bot/Serverless/common/testutils"
 	"github.com/stretchr/testify/assert"
 )
 

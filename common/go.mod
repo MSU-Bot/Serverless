@@ -1,4 +1,4 @@
-module github.com/MSU-Bot/msubot-serverless/common
+module github.com/MSU-Bot/Serverless/common
 
 go 1.13
 

@@ -12,7 +12,7 @@ import (
 	"strings"
 
 	"cloud.google.com/go/firestore"
-	"github.com/MSU-Bot/msubot-serverless/common/models"
+	"github.com/MSU-Bot/Serverless/common/models"
 	"github.com/PuerkitoBio/goquery"
 	log "github.com/sirupsen/logrus"
 )

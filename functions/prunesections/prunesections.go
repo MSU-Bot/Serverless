@@ -1,11 +1,11 @@
-package pruner
+package prunesections
 
 import (
 	"fmt"
 	"net/http"
 	"time"
 
-	"github.com/MSU-Bot/msubot-serverless/common/serverutils"
+	"github.com/MSU-Bot/Serverless/common/serverutils"
 	log "github.com/sirupsen/logrus"
 )
 

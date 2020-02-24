@@ -1,11 +1,11 @@
-package messenger
+package recievemsg
 
 import (
 	"fmt"
 	"net/http"
 	"strings"
 
-	"github.com/MSU-Bot/msubot-serverless/common/serverutils"
+	"github.com/MSU-Bot/Serverless/common/serverutils"
 	"github.com/plivo/plivo-go/xml"
 
 	log "github.com/sirupsen/logrus"

@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/MSU-Bot/msubot-serverless/common/models"
-	"github.com/MSU-Bot/msubot-serverless/common/serverutils"
+	"github.com/MSU-Bot/Serverless/common/models"
+	"github.com/MSU-Bot/Serverless/common/serverutils"
 
 	"cloud.google.com/go/firestore"
 
@@ -23,12 +23,7 @@ func HandleRequest(w http.ResponseWriter, r *http.Request) {
 
 	log.WithContext(ctx).Infof("Context loaded. Starting execution.")
 
-	// Make sure the request is from the appengine cron
-	// if r.Header.Get("X-Appengine-Cron") == "" {
-	// 	log.Warningf(ctx, "Request is not from the cron. Exiting")
-	// 	w.WriteHeader(403)
-	// 	return
-	// }
+	// TODO: Add a jwt to make sure this came from the Scheduler
 
 	fbClient := serverutils.GetFirebaseClient(ctx)
 	if fbClient == nil {

@@ -1,4 +1,4 @@
-package scraper
+package getsections
 
 import (
 	"encoding/json"
@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/SpencerCornish/msubot-serverless/server/serverutils"
+	"github.com/MSU-bot/Serverless/common/serverutils"
 	log "github.com/sirupsen/logrus"
 )
 
@@ -55,7 +55,7 @@ func HandleRequest(w http.ResponseWriter, r *http.Request) {
 	}
 
 	//Set response headers
-	w.Header().Add("Access-Control-Allow-Origin", "*")
+	w.Header().Add("Access-Control-Allow-Origin", "msubot.com")
 	w.Header().Add("Access-Control-Allow-Methods", "GET")
 	w.Header().Add("Content-Type", "application/json")
 
